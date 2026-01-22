@@ -2,6 +2,24 @@
 
 A cloud-based ransomware detection system that uses **behavioral analysis** and **machine learning** to identify malicious file encryption activities in real time. The system monitors file system behavior and applies anomaly detection models built with Python and Scikit-learn to flag suspicious patterns with **over 90% accuracy**.
 
+## 🌐 Live Demo
+
+**Try it now**: [https://devyansh-sargam.github.io/ransomware-detection-system/](https://devyansh-sargam.github.io/ransomware-detection-system/)
+
+### How to Use the Live Demo:
+
+1. **Visit the live site** - Click the link above
+2. **Click the upload area** - The large box with the 📁 icon that says "Click to select a file"
+3. **Select any file** - Choose any file from your computer (images, documents, etc.)
+4. **Click "Start Scan"** - The button will activate after you select a file
+5. **View results** - See detailed threat analysis including:
+   - Risk level (CRITICAL, HIGH, MEDIUM, LOW)
+   - Confidence score
+   - Detected patterns
+   - Security recommendations
+
+The demo runs entirely in your browser with a real ML detection engine!
+
 ## 🚀 Features
 
 ### Core Capabilities
@@ -75,13 +93,18 @@ Open your browser and navigate to `http://localhost:3001`
 
 ## 🎯 Usage
 
-### File Scanner
+### Live Demo (Browser-based)
+Visit [https://devyansh-sargam.github.io/ransomware-detection-system/](https://devyansh-sargam.github.io/ransomware-detection-system/) for instant access - no installation required!
+
+### Local Installation
+
+#### File Scanner
 1. Click on the upload area to select a file
 2. Click "Start Scan" button
 3. View detailed threat analysis report
 4. Follow recommended actions if threat is detected
 
-### Real-time Monitoring
+#### Real-time Monitoring
 - View live statistics on the dashboard
 - Get instant alerts when threats are detected
 - Monitor system performance metrics
@@ -137,10 +160,10 @@ The system uses a sophisticated behavioral analysis approach:
 - Combined confidence score
 
 ### 3. Risk Classification
-- **CRITICAL**: Score ≥ 0.8
-- **HIGH**: Score ≥ 0.6
-- **MEDIUM**: Score ≥ 0.4
-- **LOW**: Score < 0.4
+- **CRITICAL**: Score ≥ 0.8 - Immediate action required
+- **HIGH**: Score ≥ 0.6 - Urgent attention needed
+- **MEDIUM**: Score ≥ 0.4 - Monitor closely
+- **LOW**: Score < 0.4 - Informational
 
 ## 🔐 Security Features
 
@@ -168,6 +191,9 @@ The system uses a sophisticated behavioral analysis approach:
 
 ## 🚀 Deployment
 
+### Live Demo (GitHub Pages)
+Already deployed at: [https://devyansh-sargam.github.io/ransomware-detection-system/](https://devyansh-sargam.github.io/ransomware-detection-system/)
+
 ### Production Build
 The application is ready for deployment to various platforms:
 
@@ -176,12 +202,13 @@ The application is ready for deployment to various platforms:
 - **Docker**: Containerized deployment
 - **Vercel/Netlify**: Frontend deployment
 
-### AWS Deployment Steps
-1. Configure AWS credentials
-2. Deploy Lambda functions for file analysis
-3. Set up S3 buckets for file storage
-4. Configure SNS topics for alerts
-5. Deploy application to EC2 or Elastic Beanstalk
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment guides.
+
+## 📝 Documentation
+
+- **[Quick Start Guide](QUICKSTART.md)** - Get started in 5 minutes
+- **[Deployment Guide](DEPLOYMENT.md)** - Deploy to various platforms
+- **[Contributing Guidelines](CONTRIBUTING.md)** - How to contribute
 
 ## 📝 License
 
@@ -196,11 +223,14 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
 ## 📧 Support
 
 For issues and questions:
-- Open a GitHub issue
-- Contact: devyanshsargamips@gmail.com
+- 🌐 **Live Demo**: [Try it now](https://devyansh-sargam.github.io/ransomware-detection-system/)
+- 🐛 **Report Issues**: [GitHub Issues](https://github.com/devyansh-sargam/ransomware-detection-system/issues)
+- 📧 **Email**: devyanshsargamips@gmail.com
 
 ## 🎓 Learn More
 
@@ -208,9 +238,14 @@ For issues and questions:
 - [AWS Security Best Practices](https://aws.amazon.com/security/best-practices/)
 - [Machine Learning for Cybersecurity](https://www.scikit-learn.org/)
 
+## ⭐ Star History
+
+If you find this project useful, please consider giving it a star! ⭐
+
 ---
 
 **Built with ❤️ for cybersecurity professionals**
 
 **Author**: Devyansh Sargam  
+**Live Demo**: [https://devyansh-sargam.github.io/ransomware-detection-system/](https://devyansh-sargam.github.io/ransomware-detection-system/)  
 **Repository**: [ransomware-detection-system](https://github.com/devyansh-sargam/ransomware-detection-system)
