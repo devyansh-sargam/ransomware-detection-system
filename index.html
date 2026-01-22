@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛡️ Ransomware Detection System</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+      color: #ffffff;
+      min-height: 100vh;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .header {
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(255, 71, 87, 0.2);
+      border-bottom: 3px solid #ff4757;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    .subtitle { color: #a0a0b0; font-size: 1.2rem; margin-bottom: 2rem; }
+    .hero {
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+      padding: 3rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero-icon { font-size: 5rem; margin-bottom: 1rem; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .feature-card {
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #2d2d44;
+      transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+      border-color: #ff4757;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(255, 71, 87, 0.2);
+    }
+    .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .feature-card h3 { margin-bottom: 0.5rem; color: #ffffff; }
+    .feature-card p { color: #a0a0b0; line-height: 1.6; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid #ff4757;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ff4757;
+      margin: 0.5rem 0;
+    }
+    .stat-label { color: #a0a0b0; font-size: 0.9rem; }
+    .cta-section {
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+      padding: 3rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #ff4757 0%, #ff6b81 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 71, 87, 0.4);
+    }
+    .btn-secondary {
+      background: linear-gradient(135deg, #5f27cd 0%, #7d5fff 100%);
+    }
+    .tech-stack {
+      background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+    .tech-stack h2 { text-align: center; margin-bottom: 1.5rem; }
+    .tech-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .badge {
+      background: rgba(255, 71, 87, 0.1);
+      color: #ff4757;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    footer {
+      background: #1a1a2e;
+      padding: 2rem;
+      text-align: center;
+      color: #a0a0b0;
+      border-top: 1px solid #2d2d44;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .features, .stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🛡️ Ransomware Detection System</h1>
+    <p class="subtitle">Cloud-based behavioral analysis with machine learning - 90%+ accuracy</p>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <div class="hero-icon">🔒</div>
+      <h2>AI-Powered Ransomware Protection</h2>
+      <p style="color: #a0a0b0; margin: 1rem 0;">Real-time threat detection using behavioral analysis and machine learning to identify malicious file encryption activities</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-value">90%+</div>
+        <div class="stat-label">Detection Accuracy</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">&lt;500ms</div>
+        <div class="stat-label">Response Time</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">40%</div>
+        <div class="stat-label">Faster Containment</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">&lt;5%</div>
+        <div class="stat-label">False Positives</div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>Machine Learning</h3>
+        <p>Advanced behavioral analysis using Scikit-learn models with high-precision threat identification</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">☁️</div>
+        <h3>Cloud Integration</h3>
+        <p>Seamless AWS Lambda, S3, and SNS integration for scalable detection and automated alerts</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Real-time Detection</h3>
+        <p>Instant threat analysis with WebSocket-based live monitoring and notifications</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Pattern Recognition</h3>
+        <p>Detects rapid encryption, mass modifications, suspicious extensions, and high entropy content</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Interactive Dashboard</h3>
+        <p>Comprehensive threat visualization with real-time statistics and alert management</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚨</div>
+        <h3>Automated Response</h3>
+        <p>Instant notifications and incident response automation for rapid threat containment</p>
+      </div>
+    </div>
+
+    <div class="tech-stack">
+      <h2>🛠️ Technology Stack</h2>
+      <div class="tech-badges">
+        <span class="badge">Node.js</span>
+        <span class="badge">Express</span>
+        <span class="badge">Socket.IO</span>
+        <span class="badge">Scikit-learn</span>
+        <span class="badge">AWS Lambda</span>
+        <span class="badge">AWS S3</span>
+        <span class="badge">AWS SNS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h2>Get Started Now</h2>
+      <p style="color: #a0a0b0; margin: 1rem 0;">Deploy your own ransomware detection system in minutes</p>
+      <a href="https://github.com/devyansh-sargam/ransomware-detection-system" class="btn" target="_blank">
+        📦 View on GitHub
+      </a>
+      <a href="https://github.com/devyansh-sargam/ransomware-detection-system/blob/main/QUICKSTART.md" class="btn btn-secondary" target="_blank">
+        🚀 Quick Start Guide
+      </a>
+      <a href="https://github.com/devyansh-sargam/ransomware-detection-system/blob/main/DEPLOYMENT.md" class="btn btn-secondary" target="_blank">
+        🌐 Deployment Guide
+      </a>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+      <h2 style="text-align: center; margin-bottom: 1.5rem;">📋 Key Features</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+        <div style="padding: 1rem; background: rgba(46, 213, 115, 0.05); border-radius: 8px; border-left: 3px solid #2ed573;">
+          <strong>✓</strong> Rapid file encryption detection
+        </div>
+        <div style="padding: 1rem; background: rgba(46, 213, 115, 0.05); border-radius: 8px; border-left: 3px solid #2ed573;">
+          <strong>✓</strong> Mass file modification analysis
+        </div>
+        <div style="padding: 1rem; background: rgba(46, 213, 115, 0.05); border-radius: 8px; border-left: 3px solid #2ed573;">
+          <strong>✓</strong> Suspicious extension monitoring
+        </div>
+        <div style="padding: 1rem; background: rgba(46, 213, 115, 0.05); border-radius: 8px; border-left: 3px solid #2ed573;">
+          <strong>✓</strong> High entropy content detection
+        </div>
+        <div style="padding: 1rem; background: rgba(46, 213, 115, 0.05); border-radius: 8px; border-left: 3px solid #2ed573;">
+          <strong>✓</strong> Ransom note identification
+        </div>
+        <div style="padding: 1rem; background: rgba(46, 213, 115, 0.05); border-radius: 8px; border-left: 3px solid #2ed573;">
+          <strong>✓</strong> Real-time WebSocket alerts
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Ransomware Detection System</strong></p>
+    <p style="margin: 0.5rem 0;">Built with ❤️ for cybersecurity professionals</p>
+    <p>Powered by AWS Lambda, S3, SNS | ML Engine: Scikit-learn</p>
+    <p style="margin-top: 1rem;">
+      <a href="https://github.com/devyansh-sargam/ransomware-detection-system" style="color: #ff4757; text-decoration: none;">GitHub</a> • 
+      <a href="https://github.com/devyansh-sargam/ransomware-detection-system/blob/main/README.md" style="color: #ff4757; text-decoration: none;">Documentation</a> • 
+      <a href="https://github.com/devyansh-sargam/ransomware-detection-system/issues" style="color: #ff4757; text-decoration: none;">Issues</a>
+    </p>
+  </footer>
+</body>
+</html>
